@@ -240,9 +240,11 @@ class CV extends React.Component {
           <Container textAlign='center'><p><i>{cv.quote}</i></p></Container>
         </div>
         {this.renderExperience(cv, 4, 12)}
-        <div style={{ flex: 1, position: 'relative', marginBottom: '12px', padding: '12px' }}>
-          <i>Wyrażam zgodę na przetwarzanie moich danych osobowych przez {this.props.company} w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.</i>
-        </div>
+        {this.props.company !== '' &&
+          <div style={{ flex: 1, position: 'relative', marginBottom: '12px', padding: '12px' }}>
+            <i>Wyrażam zgodę na przetwarzanie moich danych osobowych przez {this.props.company} w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.</i>
+          </div>
+        }
       </div>
     )
   }
