@@ -1,3 +1,3 @@
-###Reactowe CV
+###React.js CV
 
-W */src/cv* sa JSONowe templatki
+You can find the JSON templates in *src/cv*
